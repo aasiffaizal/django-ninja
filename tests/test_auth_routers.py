@@ -59,4 +59,6 @@ client = TestClient(api)
     ],
 )
 def test_router_auth(route, status_code):
+    a = 10
+    assert a == 10
     assert client.get(route).status_code == status_code
